@@ -1,190 +1,236 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Portfólio do Marcolino</title>
-		<link rel="icon" type="image/svg" href="img/desktop_icon.svg">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" />
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcelo Marcolino · Desenvolvedor Full Stack e professor</title>
+<meta name="description" content="Portfólio de Marcelo Antonio Pereira Marcolino: desenvolvedor full stack (C#/.NET, Java, Python, SQL Server, Power Platform) e professor de ensino técnico no Centro Paula Souza.">
+<meta property="og:title" content="Marcelo Marcolino · Desenvolvedor Full Stack e professor">
+<meta property="og:description" content="Projetos, experiência e formação de Marcelo Antonio Pereira Marcolino.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcelomarcolino.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4fd8'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-		<!-- Atualizar com minhas próprias fontes -->
-		<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+<header class="topo">
+  <nav class="nav largura">
+    <a class="marca" href="#inicio">Marcelo Marcolino</a>
+    <ul>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
 
-		<link rel="stylesheet" href="css/style.css">
+<main id="conteudo">
+  <section id="inicio" class="hero largura">
+    <p class="local">São Paulo/SP</p>
+    <h1>Marcelo Antonio Pereira Marcolino</h1>
+    <p class="cargo">Desenvolvedor Full Stack · Professor de ensino técnico</p>
+    <p class="intro">Desenvolvo software profissionalmente desde 2018, com C#/.NET, Java, Python, SQL Server e Power Platform, em empresas como SENAI São Paulo, Wipro e G&amp;P (com atuação na CDHU). Desde 2025, também leciono desenvolvimento de sistemas e banco de dados nas Etecs do Centro Paula Souza.</p>
+    <div class="acoes">
+      <a class="botao primario" href="#projetos">Ver projetos</a>
+      <a class="botao" href="https://www.linkedin.com/in/marcelo-antonio-pereira-marcolino/" rel="noopener" target="_blank">LinkedIn</a>
+      <a class="botao" href="https://github.com/MarceloMarcolino" rel="noopener" target="_blank">GitHub</a>
+      <a class="botao" href="mailto:marcelo.marcolino.dev@gmail.com">E-mail</a>
+    </div>
+  </section>
 
-	</head>
-	<body>
-		<header>
-			<div class="logo">
-				<img src="img/marcolinodev.png" alt="">
-			</div>
-			<button class="nav-toggle" aria-label="toggle navigation">
-				<span class="hamburger"></span>
-			</button>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="#services" class="nav__link">Meus Serviços</a></li>
-					<li class="nav__item"><a href="#about" class="nav__link">Sobre mim</a></li>
-					<li class="nav__item"><a href="#work" class="nav__link">Meus Projetos</a></li>
-				</ul>
-			</nav>
-		</header>
+  <section id="projetos" class="secao largura">
+    <h2>Projetos</h2>
+    <p class="secao-intro">Trabalhos acadêmicos, de game jams e de docência. Os projetos de trabalho pertencem às empresas e não aparecem aqui.</p>
+    <div class="grade">
 
-		<!-- Introdução -->
-		<section class="intro" id="home">
-			<h1 class="section__title section__title--intro">
-				Oi, eu sou o <strong>Marcelo Marcolino</strong>
-			</h1>
-			<p class="section__subtitle section__subtitle--intro">DEV fullstack</p>
-			<img src="img/marcolino-dev-01.jpeg" alt="uma foto do Marcolino sorrindo" class="intro__img">
-		</section>
+      <article class="card">
+        <img src="img/projetos/somatorios.jpg" alt="Tela de uma partida do Somatórios: objetivo 44, cartas de números e operações do Jogador 1" width="960" height="484" loading="lazy">
+        <div class="card-corpo">
+          <p class="meta">2026 · USJT · equipe de 7</p>
+          <h3>Somatórios</h3>
+          <p>Jogo web cooperativo de matemática para 2 a 5 jogadores: as cartas de números e de operações são combinadas para chegar juntos ao número-alvo. Criei o projeto e cuidei da lógica do jogo e da coordenação da equipe.</p>
+          <ul class="tags"><li>React 19</li><li>Bootstrap 5</li><li>Jest</li><li>Vercel</li></ul>
+          <p class="links"><a href="https://somatorios-a3.vercel.app" rel="noopener" target="_blank">Jogar</a><a href="https://github.com/MarceloMarcolino/somatorios-a3" rel="noopener" target="_blank">Código</a></p>
+        </div>
+      </article>
 
-		<!-- Meus serviços -->
-		<section class="my-services" id="services">
-			<h2 class="section__title section__title--services">O que eu faço</h2>
-			<div class="services">
-				<div class="service">
-					<h3>Design + Desenvolvimento</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div> <!-- / service -->
+      <article class="card">
+        <img src="img/projetos/sistemas-automatizados.jpg" alt="Circuito com Arduino Uno, potenciômetro, botão e LED em simulação no Wokwi" width="428" height="330" loading="lazy">
+        <div class="card-corpo">
+          <p class="meta">2026 · USJT · Sistemas Automatizados</p>
+          <h3>Automação e semáforo inteligente</h3>
+          <p>Atividades com Arduino (C++, simuladas no Wokwi), Ladder e GRAFCET, e o projeto em equipe da disciplina: um semáforo inteligente com fase de pedestres em CLP simulado, com ferramentas de verificação em Python.</p>
+          <ul class="tags"><li>C++ (Arduino)</li><li>Ladder</li><li>GRAFCET</li><li>Python</li></ul>
+          <p class="links"><a href="https://github.com/MarceloMarcolino/USJT-2026.2-Sistemas-Automatizados" rel="noopener" target="_blank">Código</a><a href="https://github.com/MarceloMarcolino/USJT-2026.2-Sistemas-Automatizados/tree/main/atividades/USJT-2026.2-SA-A3-Semaforo" rel="noopener" target="_blank">Semáforo</a></p>
+        </div>
+      </article>
 
-				<div class="service">
-					<h3>E-Commerce</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div> <!-- / service -->
+      <article class="card">
+        <div class="card-capa capa-java" aria-hidden="true"><span>Java 17 · MongoDB</span></div>
+        <div class="card-corpo">
+          <p class="meta">2026 · Etec Prof. Aprígio Gonzaga</p>
+          <h3>Full Metal Cria: sistema didático</h3>
+          <p>Sistema em Java para um RPG de mesa, usado como projeto integrador das aulas de Banco de Dados III e Desenvolvimento de Sistemas II que leciono: persistência em MongoDB, padrões DAO e Singleton e testes automatizados com cobertura medida.</p>
+          <ul class="tags"><li>Java 17</li><li>MongoDB</li><li>Maven</li><li>JUnit 5</li><li>JaCoCo</li></ul>
+          <p class="links"><a href="https://github.com/MarceloMarcolino/fullmetalcria" rel="noopener" target="_blank">Código</a></p>
+        </div>
+      </article>
 
-				<div class="service">
-					<h3>WordPress</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div> <!-- / service -->
-			</div> <!-- / services -->
+      <article class="card">
+        <div class="card-capa capa-dados" aria-hidden="true"><span>Machine learning</span></div>
+        <div class="card-corpo">
+          <p class="meta">2026 · USJT · grupo de 7</p>
+          <h3>Comitê de classificadores</h3>
+          <p>Previsão da avaliação de jogos de tabuleiro com dados do BoardGameGeek: cinco modelos (KNN, Naive Bayes, SVM, árvore de decisão e MLP) combinados por votação hard e soft, com notebook, relatório e painel em Streamlit.</p>
+          <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>Streamlit</li></ul>
+        </div>
+      </article>
 
-			<a href="#work" class="btn">Meu Trabalho</a>
-		</section>
+      <article class="card">
+        <img src="img/projetos/just-arena.jpg" alt="Partida de Just Arena: dois personagens enfrentam o chefe Jurupari em uma arena" width="960" height="539" loading="lazy">
+        <div class="card-corpo">
+          <p class="meta">2018 · Fatec São Caetano do Sul · equipe de 5</p>
+          <h3>Just Arena</h3>
+          <p>Jogo 3D cooperativo de arena em que dois jogadores enfrentam um chefe, com site do jogo para cadastro, login e ranking.</p>
+          <ul class="tags"><li>Unity</li><li>C#</li><li>Blender</li><li>PHP</li><li>MySQL</li></ul>
+          <p class="links"><a href="https://github.com/MarceloMarcolino/justarena" rel="noopener" target="_blank">Código</a></p>
+        </div>
+      </article>
 
-		<!-- Sobre mim -->
-		<section class="about-me" id="about">
-			<h2 class="section__title section__title--about">Quem eu sou</h2>
-			<p class="section__subtitle section__subtitle--about">Desenvolvedor baseado em São Paulo</p>
+      <article class="card">
+        <img src="img/projetos/siegel.jpg" alt="Siegel and the Frost Giants: três aldeias empilhadas, com barras de vida e gigantes de gelo" width="354" height="216" loading="lazy">
+        <div class="card-corpo">
+          <p class="meta">2018 · Global Game Jam · equipe de 8</p>
+          <h3>Siegel and the Frost Giants</h3>
+          <p>Jogo 2D de defesa de aldeias feito em 48 horas na Global Game Jam 2018. Fui um dos programadores da equipe.</p>
+          <ul class="tags"><li>Unity</li><li>C#</li></ul>
+        </div>
+      </article>
 
-			<div class="about-me__body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
+      <article class="card">
+        <div class="card-capa capa-jam" aria-hidden="true"><span>Game jam 2019</span></div>
+        <div class="card-corpo">
+          <p class="meta">2019 · Fatec SCS Game Jam · equipe de 3</p>
+          <h3>NauBriguem</h3>
+          <p>Jogo 2D feito na primeira game jam da Fatec São Caetano do Sul. Nos créditos do jogo: programador back-end.</p>
+          <ul class="tags"><li>Unity</li><li>C#</li><li>Tilemap 2D</li></ul>
+        </div>
+      </article>
 
-			<img src="img/marcolino-dev-02.jpeg" alt="Marcelo jantando" class="about-me__img">
-		</section>
+      <article class="card">
+        <img src="img/projetos/caipirados.jpg" alt="Tela de título de Caipirados!: quatro personagens de festa junina sob bandeirinhas" width="640" height="480" loading="lazy">
+        <div class="card-corpo">
+          <p class="meta">2017 · Fatec São Caetano do Sul · dupla</p>
+          <h3>Caipirados!</h3>
+          <p>Jogo de arena para até 4 jogadores com tema de festa junina, em C++ com a biblioteca gráfica BGI. Nos créditos: game design e sound design.</p>
+          <ul class="tags"><li>C++</li><li>BGI</li><li>Game design</li></ul>
+        </div>
+      </article>
 
-		<!-- Meu trabalho -->
-		<section class="my-work" id="work">
-			<h2 class="section__title section__title--work">Meu trabalho</h2>
-			<p class="section__subtitle section__subtitle--work">Uma seleção da minha gama de trabalhos</p>
+      <article class="card">
+        <div class="card-capa capa-lgpd" aria-hidden="true"><span>LGPD</span></div>
+        <div class="card-corpo">
+          <p class="meta">2023 · Fatec São Caetano do Sul · trabalho de graduação</p>
+          <h3>Guia orientativo sobre a LGPD</h3>
+          <p>Guia em linguagem acessível sobre a coleta de dados do usuário final: o que são dados pessoais, que golpes podem usá-los e como se proteger. Trabalho de graduação em Segurança da Informação.</p>
+          <ul class="tags"><li>Segurança da informação</li><li>LGPD</li><li>InDesign</li></ul>
+        </div>
+      </article>
 
-			<div class="portfolio">
-				<!-- Portfolio item 01 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-01.jpg" alt="My Home Experience" class="portfolio__img">
-				</a>
+    </div>
+  </section>
 
-				<!-- Portfolio item 02 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-02.jpg" alt="Exemplo de sala 1" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 03 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-03.jpg" alt="Exemplo de sala 2" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 04 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-04.jpg" alt="Uso de Realidade Virtual" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 05 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-05.jpg" alt="Logo da IM Designs" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 06 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-06.jpg" alt="Stand da Hyper X na BGS 2018" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 07 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-07.jpg" alt="Lema da IM Designs" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 08 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-08.jpg" alt="Logo da SIGhRA" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 09 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-09.jpg" alt="Entrada do Zoo de SP" class="portfolio__img">
-				</a>
-				
-				<!-- Portfolio item 10 -->
-				<a href="portfolio-item.html" class="portfolio__item">
-					<img src="img/portfolio-10.jpg" alt="Logo da Wipro" class="portfolio__img">
-				</a>
-			</div>
-		</section>
+  <section id="experiencia" class="secao largura">
+    <h2>Experiência</h2>
+    <ol class="linha-tempo">
+      <li>
+        <p class="periodo">07/2025 – atual</p>
+        <h3>Engenheiro de Software Full Stack <span>· Nowpro Tech</span></h3>
+        <p>Desenvolvimento full stack e automação de processos (RPA) com Python e Selenium.</p>
+      </li>
+      <li>
+        <p class="periodo">06/2025 – atual</p>
+        <h3>Professor de Ensino Médio e Técnico <span>· Centro Paula Souza</span></h3>
+        <p>Banco de Dados, Desenvolvimento de Sistemas e Aplicativos Informatizados em cursos técnicos das Etecs Prof. Aprígio Gonzaga e de Vila Formosa. Aprovado no concurso público para Professor de Ensino Médio e Técnico do Edital 185/08/2026.</p>
+      </li>
+      <li>
+        <p class="periodo">05/2024 – 12/2024</p>
+        <h3>Desenvolvedor Full Stack <span>· G&amp;P Projetos e Sistemas</span></h3>
+        <p>Atuação terceirizada na CDHU: melhorias no sistema web de contratos habitacionais (ASP.NET, C#, SQL Server) e documentação de sistemas legados.</p>
+      </li>
+      <li>
+        <p class="periodo">11/2022 – 10/2023</p>
+        <h3>Desenvolvedor de Sistemas II <span>· SENAI São Paulo</span></h3>
+        <p>Aplicações web e automações com Power Apps, Power Automate e SharePoint; bancos de dados SQL Server e MySQL.</p>
+      </li>
+      <li>
+        <p class="periodo">10/2021 – 09/2022</p>
+        <h3>Programador de Sistemas de Informação <span>· Wipro do Brasil</span></h3>
+        <p>Manutenção e correção de aplicações web para clientes do setor bancário, com Java.</p>
+      </li>
+      <li>
+        <p class="periodo">10/2019 – 10/2021</p>
+        <h3>Programador Web Júnior <span>· SIGhRA Sistemas Inovadores</span></h3>
+        <p>Sistema web de rastreamento de transporte com Java, JSF e PrimeFaces.</p>
+      </li>
+      <li>
+        <p class="periodo">03/2018 – 06/2019</p>
+        <h3>Estagiário de Desenvolvimento <span>· IM Designs</span></h3>
+        <p>Realidade virtual com Unreal Engine no projeto My Home Experience.</p>
+      </li>
+    </ol>
+  </section>
 
-		<!-- Rodapé -->
-		<footer class="footer">
-			<!-- endereço de e-mail -->
-			<a href="mailto:marcelo.marcolino.dev@gmail.com" class="footer__link">marcelo.marcolino.dev@gmail.com</a>
-			<ul class="social-list">
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://codepen.io/marcelomarcolino">
-						<i class="fa-brands fa-codepen"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://dribbble.com/MarcolinoDev">
-						<i class="fa-brands fa-dribbble"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://twitter.com/MarcelinhoAPM">
-						<i class="fa-brands fa-twitter"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://github.com/MarceloMarcolino">
-						<i class="fa-brands fa-github"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://www.facebook.com/marceloantonio.pereiramarcolino">
-						<i class="fa-brands fa-facebook"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://www.instagram.com/marcelo270497/">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://www.linkedin.com/in/marcelo-antonio-pereira-marcolino/">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://programathor.com.br/users/177533">
-						<i class="fa-solid fa-gavel"></i>
-					</a>
-				</li>
-			</ul>
-		</footer>
+  <section id="formacao" class="secao largura">
+    <h2>Formação</h2>
+    <div class="colunas">
+      <div>
+        <h3 class="sub">Acadêmica</h3>
+        <ul class="lista">
+          <li><strong>Engenharia de Software</strong>, Universidade São Judas Tadeu <span>em curso, desde 2024</span></li>
+          <li><strong>Pós-graduação Lato Sensu em Gamificação e as Tecnologias Atuais na Educação</strong>, Faculdade do Estado de São Paulo <span>2026</span></li>
+          <li><strong>Licenciatura em Letras Inglês</strong>, Centro Universitário FAEP <span>2026</span></li>
+          <li><strong>Tecnologia em Segurança da Informação</strong>, Fatec São Caetano do Sul <span>2023</span></li>
+          <li><strong>Tecnologia em Jogos Digitais</strong>, Fatec São Caetano do Sul <span>2019</span></li>
+          <li><strong>Técnico em Informática</strong>, Etec, Centro Paula Souza <span>2017</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub">Cursos complementares</h3>
+        <ul class="lista">
+          <li><strong>Computação em Nuvem AZ-900 Fundamentals</strong>, Qualifica SP <span>64 h, 2024</span></li>
+          <li><strong>Java Fundamentals</strong>, Oracle Academy <span>2024</span></li>
+          <li><strong>Formação Lean, Governança e Agilidade Escalada</strong>, Alura <span>96 h, 2024</span></li>
+          <li><strong>SharePoint Online Power User (55215)</strong>, Ka Solution <span>32 h, 2023</span></li>
+          <li><strong>Lei Geral de Proteção de Dados</strong>, Unindústria <span>48 h, 2023</span></li>
+          <li><strong>Java Programmer</strong>, Impacta <span>100 h, 2020</span></li>
+        </ul>
+        <h3 class="sub">Idiomas</h3>
+        <ul class="lista">
+          <li><strong>Português</strong> <span>nativo</span></li>
+          <li><strong>Inglês</strong> <span>fluente</span></li>
+          <li><strong>Espanhol</strong> <span>intermediário</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <section id="contato" class="secao largura contato">
+    <h2>Contato</h2>
+    <p>Estou aberto a oportunidades como desenvolvedor full stack. Fale comigo por e-mail ou pelo LinkedIn.</p>
+    <div class="acoes">
+      <a class="botao primario" href="mailto:marcelo.marcolino.dev@gmail.com">marcelo.marcolino.dev@gmail.com</a>
+      <a class="botao" href="https://www.linkedin.com/in/marcelo-antonio-pereira-marcolino/" rel="noopener" target="_blank">LinkedIn</a>
+      <a class="botao" href="https://github.com/MarceloMarcolino" rel="noopener" target="_blank">GitHub</a>
+    </div>
+  </section>
+</main>
 
-		<script src="js/index.js"></script>
-				
-	</body>
+<footer class="rodape largura">
+  <p>Marcelo Antonio Pereira Marcolino · Atualizado em novembro de 2026</p>
+</footer>
+</body>
 </html>
